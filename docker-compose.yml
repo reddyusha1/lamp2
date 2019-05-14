@@ -1,0 +1,28 @@
+version: '2'
+services:
+      php-apache:
+              build:
+                 context: ./php-apache
+              ports:
+                  - 8050:80
+                  
+              volumes:
+                  - ./DocumentRoot:/var/www/html
+              container_name: lamp_80
+                  
+              links:
+                  - 'mariadb'
+              restart: always
+
+        mariadb:
+            image: mariadb:10.4
+            volumes:
+              - mariadb:/var/lib/mysql
+            environment:
+              MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+              MYSQL_ROOT_PASSWORD: "password"
+              MYSQL_USER: 'testuser'
+              MYSQL_PASSWORD: 'testpwd'
+              MYSQL_DATABASE: 'testdb'
+volumes:
+     mariadb:
