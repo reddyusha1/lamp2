@@ -4,7 +4,7 @@
 
 <body>
 
-<h1>PHP Hello world</h1>
+<h1>PHP Hello Example</h1>
 
 <p>
 <?php
