@@ -14,7 +14,7 @@ services:
                   - 'mariadb'
               restart: always
 
-        mariadb:
+      mariadb:
             image: mariadb:10.4
             volumes:
               - mariadb:/var/lib/mysql
