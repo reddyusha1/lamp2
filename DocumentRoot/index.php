@@ -1,46 +1,55 @@
-<!-- File: server-variables.php -->
-
 <html>
 
 <head>
-<title>ServerVariables Example</title>
-<link rel="stylesheet" type="text/css" href="../styles.css" />
+<title>A Vanilla Web Page</title>
 </head>
 
 <body>
 
-<h2>ServerVariables Example</h2>
+<h1>A Vanilla Web Page</h1>
 
-<p>Print the values of server variables.</p>
+<h2>Two Lorem Ipsum Paragraphs</h2>
 
-<form action="server-variables.php" method="get">
-<?php 
-    if (!isset($_GET["is_submitted"]))
-    {
-        echo <<<HTML
-<input type="submit" name="btnSubmit" value="Show Server Variables" />
-<input type="hidden" name="is_submitted" value="1" />
-HTML;
-    }
-    else
-    {
-        echo <<<HTML
-<table border="1" cellpadding="5">
-<tr><th>Variable</th><th>Value</th> </tr>
-<tr><td>PHP_SELF</td>       <td>$_SERVER[PHP_SELF]</td>       </tr>
-<tr><td>QUERY_STRING</td>   <td>$_SERVER[QUERY_STRING]</td>   </tr>
-<tr><td>SERVER_NAME</td>    <td>$_SERVER[SERVER_NAME]</td>    </tr>
-<tr><td>DOCUMENT_ROOT</td>  <td>$_SERVER[DOCUMENT_ROOT]</td>  </tr>
-<tr><td>REMOTE_ADDR</td>    <td>$_SERVER[REMOTE_ADDR]</td>    </tr>
-<tr><td>HTTP_REFERER</td>   <td>$_SERVER[HTTP_REFERER]</td>   </tr>
-<tr><td>HTTP_USER_AGENT</td><td>$_SERVER[HTTP_USER_AGENT]</td></tr>
+<p>Lorem ipsum te sed movet aeterno expetenda, quo alterum atomorum 
+ea, ei possit persequeris mel. Usu assum sententiae ne. Possit 
+consulatu liberavisse ea duo. Timeam omittam invenire cu vix. 
+Mel id tibique sadipscing, sea adhuc animal principes cu. Gubergren 
+disputando ne est, pri ea cetero fuisset nominavi, qui te graeco 
+reprimique neglegentur.</p>
+
+<p>Pro no simul labores, mei maluisset reprimique disputando ad. 
+Cu molestiae quaerendum eum. Labore euismod in duo, est perfecto 
+antiopam id. Dicta adipisci urbanitas vix id, te mel hendrerit 
+assentior. Nec et puto facilisis, est nibh suscipiantur in. Ad nec 
+vitae oratio, dicit mollis volumus pri an, deserunt argumentum has eu.</p>
+
+<p> </p>
+
+<h2>List of Latin Numbers</h2>
+
+<ol>
+<li>unus</li>
+<li>duo</li>
+<li>tres</li>
+<li>quattor</li>
+<li>quinque</li>
+<li>sex</li>
+<li>septem</li>
+<li>octo</li>
+<li>novem</li>
+<li>decem</li>
+</ol>
+
+<p> </p>
+
+<h2>Table of Latin Numbers</h2>
+
+<table cellpadding=5>
+<tr> <td>unus</td>    <td>duo</td>     <td>tres</td>  </tr>
+<tr> <td>quattor</td> <td>quinque</td> <td>sex</td>   </tr>
+<tr> <td>septem</td>  <td>octo</td>    <td>novem</td> </tr>
 </table>
 
-<input type="hidden" name="is_submitted" value="1" />
-HTML;
-    }
-?>
-</form>
 </body>
 </html>
 
